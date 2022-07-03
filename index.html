@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Two+Tone" rel="stylesheet">
+
+
+
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <link rel="stylesheet" href="./assets/css/base.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/hover.css">
+  <link rel="stylesheet" href="./assets/css/content.css">
+
+
+
+
+</head>
+
+<body>
+  <!-- --------------header------------------- -->
+  <div class="header">
+    <div class="header-background__img">
+      <video autoplay="" loop="" muted=""
+        poster="https://www.pexels.com/assets/videos/free-videos-7daa2ef41a140f70c757ce91913a4ecb90570b7d7cd2b401bae868350e02c83a.jpg">
+        <source src="https://static.pexels.com/lib/videos/free-videos.mp4" type="video/mp4">
+        <source src="https://static.pexels.com/lib/videos/free-videos.webm" type="video/webm">
+      </video>
+    </div>
+    <div class="header-nav container-fluid">
+
+      <div class="header-nav__logo">
+        <a href="#" class="header-nav__logo__link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="38px" height="38px" viewBox="0 0 32 32">
+            <path d="M2 0h28a2 2 0 0 1 2 2v28a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z" fill="#05A081"></path>
+            <path
+              d="M13 21h3.863v-3.752h1.167a3.124 3.124 0 1 0 0-6.248H13v10zm5.863 2H11V9h7.03a5.124 5.124 0 0 1 .833 10.18V23z"
+              fill="#fff"></path>
+          </svg>
+          <div class="header-nav__logotext hide-when-mid-size-and-smaller ">Pexels</div>
+        </a>
+        <div class="header-nav__search header-nav__search__header">
+          <div class="header-nav__search__main header-nav__search__main__header">
+            <input onclick="showSearchDropDown()"
+              class="header-nav__search__main__input header-nav__search__main__input__header" type="text"
+              placeholder="Search for free photos and videos">
+            <button>
+              <span class="material-icons-outlined" style="color: #5e5e5e;">
+                search
+              </span>
+            </button>
+
+          </div>
+
+          <!-- ------search bar dropdown---------- -->
+          <div class="search-bar__dropdown search-bar__dropdown__header">
+            <div class="search-bar__dropdown__title  search-bar__dropdown__title__header">
+              <span>Trending topics</span>
+            </div>
+            <div class="search-bar__dropdown__content search-bar__dropdown__content__header">
+              <a class="search-bar__dropdown__content__link search-bar__dropdown__content__link__header "
+                href="/search/mothers day/" style="">
+                <img class="js-search-bar-trending-search-model-img image-tag__img"
+                  srcset="https://images.pexels.com/photos/2072162/pexels-photo-2072162.jpeg?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=1&amp;fit=crop&amp;h=50&amp;w=50 1x, https://images.pexels.com/photos/2072162/pexels-photo-2072162.jpeg?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=2&amp;fit=crop&amp;h=50&amp;w=50 2x"
+                  src="https://images.pexels.com/photos/2072162/pexels-photo-2072162.jpeg?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=1&amp;fit=crop&amp;h=50&amp;w=50">
+                <span class="js-search-bar-trending-search-model-text">mothers day</span>
+              </a>
+              <a class="search-bar__dropdown__content__link search-bar__dropdown__content__link__header"
+                href="/search/обои для iphone/" style="">
+                <img class="js-search-bar-trending-search-model-img image-tag__img"
+                  srcset="https://images.pexels.com/photos/10408087/pexels-photo-10408087.jpeg?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=1&amp;fit=crop&amp;h=50&amp;w=50 1x, https://images.pexels.com/photos/10408087/pexels-photo-10408087.jpeg?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=2&amp;fit=crop&amp;h=50&amp;w=50 2x"
+                  src="https://images.pexels.com/photos/10408087/pexels-photo-10408087.jpeg?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=1&amp;fit=crop&amp;h=50&amp;w=50">
+                <span class="js-search-bar-trending-search-model-text">обои для iphone</span>
+              </a>
+              <a class="search-bar__dropdown__content__link search-bar__dropdown__content__link__header"
+                href="/search/office/" style="">
+                <img class="js-search-bar-trending-search-model-img image-tag__img"
+                  srcset="https://images.pexels.com/photos/37347/office-sitting-room-executive-sitting.jpg?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=1&amp;fit=crop&amp;h=50&amp;w=50 1x, https://images.pexels.com/photos/37347/office-sitting-room-executive-sitting.jpg?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=2&amp;fit=crop&amp;h=50&amp;w=50 2x"
+                  src="https://images.pexels.com/photos/37347/office-sitting-room-executive-sitting.jpg?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=1&amp;fit=crop&amp;h=50&amp;w=50">
+                <span class="search-bar__dropdown__content__title">office</span>
+              </a>
+              <a class="search-bar__dropdown__content__link search-bar__dropdown__content__link__header"
+                href="/search/art/" style="">
+                <img class="js-search-bar-trending-search-model-img image-tag__img"
+                  srcset="https://images.pexels.com/photos/3246665/pexels-photo-3246665.png?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=1&amp;fit=crop&amp;h=50&amp;w=50 1x, https://images.pexels.com/photos/3246665/pexels-photo-3246665.png?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=2&amp;fit=crop&amp;h=50&amp;w=50 2x"
+                  src="https://images.pexels.com/photos/3246665/pexels-photo-3246665.png?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=1&amp;fit=crop&amp;h=50&amp;w=50">
+                <span class="search-bar__dropdown__content__title">art</span>
+              </a>
+              <a class="search-bar__dropdown__content__link search-bar__dropdown__content__link__header"
+                href="/search/sunset/" style="">
+                <img class="js-search-bar-trending-search-model-img image-tag__img"
+                  srcset="https://images.pexels.com/photos/3998365/pexels-photo-3998365.png?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=1&amp;fit=crop&amp;h=50&amp;w=50 1x, https://images.pexels.com/photos/3998365/pexels-photo-3998365.png?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=2&amp;fit=crop&amp;h=50&amp;w=50 2x"
+                  src="https://images.pexels.com/photos/3998365/pexels-photo-3998365.png?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=1&amp;fit=crop&amp;h=50&amp;w=50">
+                <span class="search-bar__dropdown__content__title">sunset</span>
+              </a>
+              <a class="search-bar__dropdown__content__link search-bar__dropdown__content__link__header"
+                href="/search/beach/" style="">
+                <img class="js-search-bar-trending-search-model-img image-tag__img"
+                  srcset="https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=1&amp;fit=crop&amp;h=50&amp;w=50 1x, https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=2&amp;fit=crop&amp;h=50&amp;w=50 2x"
+                  src="https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=1&amp;fit=crop&amp;h=50&amp;w=50">
+                <span class="search-bar__dropdown__content__title">beach</span>
+              </a>
+              <a class="search-bar__dropdown__content__link search-bar__dropdown__content__link__header"
+                href="/search/nature/" style="">
+                <img class="js-search-bar-trending-search-model-img image-tag__img"
+                  srcset="https://images.pexels.com/photos/15286/pexels-photo.jpg?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=1&amp;fit=crop&amp;h=50&amp;w=50 1x, https://images.pexels.com/photos/15286/pexels-photo.jpg?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=2&amp;fit=crop&amp;h=50&amp;w=50 2x"
+                  src="https://images.pexels.com/photos/15286/pexels-photo.jpg?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=1&amp;fit=crop&amp;h=50&amp;w=50">
+                <span class="search-bar__dropdown__content__title">nature</span>
+              </a>
+              <a class="search-bar__dropdown__content__link search-bar__dropdown__content__link__header"
+                href="/search/flowers/" style="">
+                <img class="js-search-bar-trending-search-model-img image-tag__img"
+                  srcset="https://images.pexels.com/photos/931177/pexels-photo-931177.jpeg?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=1&amp;fit=crop&amp;h=50&amp;w=50 1x, https://images.pexels.com/photos/931177/pexels-photo-931177.jpeg?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=2&amp;fit=crop&amp;h=50&amp;w=50 2x"
+                  src="https://images.pexels.com/photos/931177/pexels-photo-931177.jpeg?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=1&amp;fit=crop&amp;h=50&amp;w=50">
+                <span class="search-bar__dropdown__content__title">flowers</span>
+              </a>
+              <a class="search-bar__dropdown__content__link search-bar__dropdown__content__link__header"
+                href="/search/texture/" style="">
+                <img class="js-search-bar-trending-search-model-img image-tag__img"
+                  srcset="https://images.pexels.com/photos/2832432/pexels-photo-2832432.png?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=1&amp;fit=crop&amp;h=50&amp;w=50 1x, https://images.pexels.com/photos/2832432/pexels-photo-2832432.png?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=2&amp;fit=crop&amp;h=50&amp;w=50 2x"
+                  src="https://images.pexels.com/photos/2832432/pexels-photo-2832432.png?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=1&amp;fit=crop&amp;h=50&amp;w=50">
+                <span class="search-bar__dropdown__content__title">texture</span>
+              </a>
+              <a class="search-bar__dropdown__content__link search-bar__dropdown__content__link__header"
+                href="/search/forest/" style="">
+                <img class="js-search-bar-trending-search-model-img image-tag__img"
+                  srcset="https://images.pexels.com/photos/775201/pexels-photo-775201.jpeg?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=1&amp;fit=crop&amp;h=50&amp;w=50 1x, https://images.pexels.com/photos/775201/pexels-photo-775201.jpeg?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=2&amp;fit=crop&amp;h=50&amp;w=50 2x"
+                  src="https://images.pexels.com/photos/775201/pexels-photo-775201.jpeg?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=1&amp;fit=crop&amp;h=50&amp;w=50">
+                <span class="search-bar__dropdown__content__title">forest</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NAV-BAR -->
+      <div class="header-nav__bar">
+        <ul>
+          <li class="hide-when-mid-size-and-smaller">
+            <div class="box-explore">
+              <a href="#" class="nav-bar__explore">
+                Explore
+              </a>
+              <div class="box-explore__drop box-shawdow">
+                <ul class="box-explore__drop__items">
+                  <li>
+                    <a data-track-action="navbar" data-track-label="discover" href="#" title="Beautiful pictures">
+                      Discover Photos
+                    </a>
+                  </li>
+                  <li>
+                    <a data-track-action="navbar" data-track-label="popular-searches" href="#">
+                      Popular Searches
+                    </a>
+                  </li>
+                  <li>
+                    <a data-track-action="navbar" data-track-label="leaderboard" href="#">
+                      Leaderboard
+                    </a>
+                  </li>
+                  <li>
+                    <a data-track-action="navbar" data-track-label="challenge" href="#">
+                      Challenges
+                    </a>
+                  </li>
+                  <li>
+                    <a data-track-action="navbar" data-track-label="videos" href="#">
+                      Free Videos
+                    </a>
+                  </li>
+                  <li>
+                    <a data-track-action="navbar" data-track-label="stories" href="#">
+                      Pexels Blog
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </li>
+          <li class="hide-when-mid-size-and-smaller">
+            <a href="#" class="nav-bar__license ">
+              License
+            </a>
+          </li>
+          <li>
+            <div class="notification__drop ">
+              <a href="#" class="nav-bar_notification">
+                <span class="material-icons-outlined">
+                  notifications
+                </span>
+              </a>
+              <div class="box-notification__drop box-shawdow">
+                <div class="box-notification__drop__header">
+                  <h4>Notification</h4>
+                  <div class="box-notification__drop__headerScroll">
+                    <div
+                      data-tooltip="Your photos get downloaded a lot, so you only get notified when a popular user downloads one of your photos. You still see all other notifications, e.g. new likes or followers."
+                      data-tooltip-align="top-left" class="notifications__info">
+                      <div class="rd__button rd__button--compact rd__button--text-primary">
+                        <div class=" path-color rd__svg-icon rd__svg-icon--grey rd__svg-icon--20x20">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
+                              stroke="#ccc">
+                            </path>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+                <div class="box-notification__drop__content">
+                  <!-- <div class="notification">
+                    <div class="notification__content">
+                      <div class="rd__avatar rd__avatar--large notification__content__avatar">
+                        <a href="/@hasenchat"><img height="50" width="50"
+                            src="https://images.pexels.com/users/avatars/3802301/hasenchat-music-398.jpeg?auto=compress&amp;fit=crop&amp;h=60&amp;w=60"></a>
+                      </div>
+                      <div class="notification__content__text">
+                        <span class="notification__content__text__header">
+                          <a href="/@hasenchat">HasenChat Music</a>
+                          followed you
+                        </span>
+                        <span class="notification__content__text__time">
+                          about 1 year
+                        </span>
+                      </div>
+
+                    </div>
+                  </div> -->
+                  <div class="notification">
+                    <div class="notification__content">
+                      <div class="notification__content__avatar">
+                        <a class="link-none" href="#"><img height="50" width="50"
+                            src="https://www.pexels.com/assets/_svg/high_five-ac43c9bbbb0dda24f8c45e6302b60d4ca163ad7b0317a24ff31c23c2479b1eb2.svg"></a>
+                      </div>
+                      <div class="notification__content__text">
+                        Virtual high five for joining Pexels! We’re striving to build the most extraordinary photo
+                        community and are proud to work with talented photographers from around the world who submit
+                        thousands of free photos per day. You can help the community by:
+                        <ul>
+                          <li><a class="link-none" href="#">Uploading your photos</a></li>
+                          <li><a class="link-none" href="#">Following photographers that inspire
+                              you</a></li>
+                          <li><a class="link-none" href="#">Discovering and liking trending photos</a></li>
+                        </ul>
+
+                        <span class="notification__content__text__time">
+                          almost 2 years
+                        </span>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="hide-when-mid-size-and-smaller">
+            <div class="box-account">
+              <a href="#" class="nav-bar__your">
+                <span class="material-icons-outlined">
+                  account_circle
+                </span>
+                <span class="material-icons-outlined">
+                  expand_more
+                </span>
+              </a>
+              <div class="box-account__drop box-shawdow">
+                <div class="box-account__drop__content">
+                  <ul class="box-account__drop__content__items">
+
+                    <li class="when-signed-in">
+                      <a href="#">
+                        Your Profile
+                      </a>
+                    </li>
+                    <li class="when-signed-in">
+                      <a href="#">
+                        Your Collections
+                      </a>
+                    </li>
+                    <li class="when-signed-in">
+                      <a href="#">
+                        Settings
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Change Language
+                        <img width="36" height="26" class="switch-locale__flag"
+                          src="https://www.pexels.com/assets/flags/en-US-9ac49f52fbe3cc86ef500da8d7dfac4468c0e98419808425a9cdc1af7714cee1.png"></a>
+                    </li>
+                    <li class="when-signed-in">
+                      <a href="#">
+                        Logout
+                      </a>
+                    </li>
+                    <li class="when-signed-in">
+                      <hr>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Image &amp; Video API
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Apps &amp; Plugins
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        FAQ
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Partnerships
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Imprint &amp; Terms
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="box-account__drop__footer">
+                  <ul class="icon">
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </li>
+          <li class="hide-when-mid-size-and-smaller">
+            <a href="#" class="nav-bar__upload ">
+              Upload
+            </a>
+          </li>
+          <li>
+            <div class="nav-menu-smaller">
+              <button class="js-nav-ham main-nav-bar__sub-nav__item" style="background: none; border:none; fill: #fff;">
+                <i><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+                  </svg>
+                </i>
+              </button>
+
+            </div>
+
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+    <div id="search-main__container">
+      <div class="search-main__header">
+        <h1>The best free stock videos shared by the Pexels community.</h1>
+      </div>
+      <div class="header-nav__search header-nav__search__bottom">
+        <div class="header-nav__search__main header-nav__search__main__bottom">
+          <input onclick="showSearchDropDownMain()"
+            class="header-nav__search__main__input header-nav__search__main__input__bottom" type="text"
+            placeholder="Search for free photos and videos">
+          <button>
+            <span class="material-icons-outlined" style="color: #5e5e5e;">
+              search
+            </span>
+          </button>
+
+        </div>
+
+        <!-- ------search bar dropdown---------- -->
+        <div class="search-bar__dropdown search-bar__dropdown__bottom">
+          <div class="search-bar__dropdown__title  search-bar__dropdown__title__bottom">
+            <span>Trending topics</span>
+          </div>
+          <div class="search-bar__dropdown__content search-bar__dropdown__content__bottom">
+            <a class="search-bar__dropdown__content__link search-bar__dropdown__content__link__bottom "
+              href="/search/mothers day/" style="">
+              <img class="js-search-bar-trending-search-model-img image-tag__img"
+                srcset="https://images.pexels.com/photos/2072162/pexels-photo-2072162.jpeg?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=1&amp;fit=crop&amp;h=50&amp;w=50 1x, https://images.pexels.com/photos/2072162/pexels-photo-2072162.jpeg?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=2&amp;fit=crop&amp;h=50&amp;w=50 2x"
+                src="https://images.pexels.com/photos/2072162/pexels-photo-2072162.jpeg?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=1&amp;fit=crop&amp;h=50&amp;w=50">
+              <span class="js-search-bar-trending-search-model-text">mothers day</span>
+            </a>
+            <a class="search-bar__dropdown__content__link search-bar__dropdown__content__link__bottom"
+              href="/search/обои для iphone/" style="">
+              <img class="js-search-bar-trending-search-model-img image-tag__img"
+                srcset="https://images.pexels.com/photos/10408087/pexels-photo-10408087.jpeg?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=1&amp;fit=crop&amp;h=50&amp;w=50 1x, https://images.pexels.com/photos/10408087/pexels-photo-10408087.jpeg?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=2&amp;fit=crop&amp;h=50&amp;w=50 2x"
+                src="https://images.pexels.com/photos/10408087/pexels-photo-10408087.jpeg?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=1&amp;fit=crop&amp;h=50&amp;w=50">
+              <span class="js-search-bar-trending-search-model-text">обои для iphone</span>
+            </a>
+            <a class="search-bar__dropdown__content__link search-bar__dropdown__content__link__bottom"
+              href="/search/office/" style="">
+              <img class="js-search-bar-trending-search-model-img image-tag__img"
+                srcset="https://images.pexels.com/photos/37347/office-sitting-room-executive-sitting.jpg?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=1&amp;fit=crop&amp;h=50&amp;w=50 1x, https://images.pexels.com/photos/37347/office-sitting-room-executive-sitting.jpg?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=2&amp;fit=crop&amp;h=50&amp;w=50 2x"
+                src="https://images.pexels.com/photos/37347/office-sitting-room-executive-sitting.jpg?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=1&amp;fit=crop&amp;h=50&amp;w=50">
+              <span class="search-bar__dropdown__content__title">office</span>
+            </a>
+            <a class="search-bar__dropdown__content__link search-bar__dropdown__content__link__bottom"
+              href="/search/art/" style="">
+              <img class="js-search-bar-trending-search-model-img image-tag__img"
+                srcset="https://images.pexels.com/photos/3246665/pexels-photo-3246665.png?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=1&amp;fit=crop&amp;h=50&amp;w=50 1x, https://images.pexels.com/photos/3246665/pexels-photo-3246665.png?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=2&amp;fit=crop&amp;h=50&amp;w=50 2x"
+                src="https://images.pexels.com/photos/3246665/pexels-photo-3246665.png?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=1&amp;fit=crop&amp;h=50&amp;w=50">
+              <span class="search-bar__dropdown__content__title">art</span>
+            </a>
+            <a class="search-bar__dropdown__content__link search-bar__dropdown__content__link__bottom"
+              href="/search/sunset/" style="">
+              <img class="js-search-bar-trending-search-model-img image-tag__img"
+                srcset="https://images.pexels.com/photos/3998365/pexels-photo-3998365.png?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=1&amp;fit=crop&amp;h=50&amp;w=50 1x, https://images.pexels.com/photos/3998365/pexels-photo-3998365.png?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=2&amp;fit=crop&amp;h=50&amp;w=50 2x"
+                src="https://images.pexels.com/photos/3998365/pexels-photo-3998365.png?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=1&amp;fit=crop&amp;h=50&amp;w=50">
+              <span class="search-bar__dropdown__content__title">sunset</span>
+            </a>
+            <a class="search-bar__dropdown__content__link search-bar__dropdown__content__link__bottom"
+              href="/search/beach/" style="">
+              <img class="js-search-bar-trending-search-model-img image-tag__img"
+                srcset="https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=1&amp;fit=crop&amp;h=50&amp;w=50 1x, https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=2&amp;fit=crop&amp;h=50&amp;w=50 2x"
+                src="https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=1&amp;fit=crop&amp;h=50&amp;w=50">
+              <span class="search-bar__dropdown__content__title">beach</span>
+            </a>
+            <a class="search-bar__dropdown__content__link search-bar__dropdown__content__link__bottom"
+              href="/search/nature/" style="">
+              <img class="js-search-bar-trending-search-model-img image-tag__img"
+                srcset="https://images.pexels.com/photos/15286/pexels-photo.jpg?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=1&amp;fit=crop&amp;h=50&amp;w=50 1x, https://images.pexels.com/photos/15286/pexels-photo.jpg?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=2&amp;fit=crop&amp;h=50&amp;w=50 2x"
+                src="https://images.pexels.com/photos/15286/pexels-photo.jpg?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=1&amp;fit=crop&amp;h=50&amp;w=50">
+              <span class="search-bar__dropdown__content__title">nature</span>
+            </a>
+            <a class="search-bar__dropdown__content__link search-bar__dropdown__content__link__bottom"
+              href="/search/flowers/" style="">
+              <img class="js-search-bar-trending-search-model-img image-tag__img"
+                srcset="https://images.pexels.com/photos/931177/pexels-photo-931177.jpeg?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=1&amp;fit=crop&amp;h=50&amp;w=50 1x, https://images.pexels.com/photos/931177/pexels-photo-931177.jpeg?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=2&amp;fit=crop&amp;h=50&amp;w=50 2x"
+                src="https://images.pexels.com/photos/931177/pexels-photo-931177.jpeg?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=1&amp;fit=crop&amp;h=50&amp;w=50">
+              <span class="search-bar__dropdown__content__title">flowers</span>
+            </a>
+            <a class="search-bar__dropdown__content__link search-bar__dropdown__content__link__bottom"
+              href="/search/texture/" style="">
+              <img class="js-search-bar-trending-search-model-img image-tag__img"
+                srcset="https://images.pexels.com/photos/2832432/pexels-photo-2832432.png?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=1&amp;fit=crop&amp;h=50&amp;w=50 1x, https://images.pexels.com/photos/2832432/pexels-photo-2832432.png?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=2&amp;fit=crop&amp;h=50&amp;w=50 2x"
+                src="https://images.pexels.com/photos/2832432/pexels-photo-2832432.png?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=1&amp;fit=crop&amp;h=50&amp;w=50">
+              <span class="search-bar__dropdown__content__title">texture</span>
+            </a>
+            <a class="search-bar__dropdown__content__link search-bar__dropdown__content__link__bottom"
+              href="/search/forest/" style="">
+              <img class="js-search-bar-trending-search-model-img image-tag__img"
+                srcset="https://images.pexels.com/photos/775201/pexels-photo-775201.jpeg?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=1&amp;fit=crop&amp;h=50&amp;w=50 1x, https://images.pexels.com/photos/775201/pexels-photo-775201.jpeg?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=2&amp;fit=crop&amp;h=50&amp;w=50 2x"
+                src="https://images.pexels.com/photos/775201/pexels-photo-775201.jpeg?auto=compress&amp;crop=entropy&amp;cs=tinysrgb&amp;dpr=1&amp;fit=crop&amp;h=50&amp;w=50">
+              <span class="search-bar__dropdown__content__title">forest</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header-nav__search__tags">
+        <p>Suggested: <span>car</span> <span>space</span> <span>dark</span> <span>nature</span> <span> business</span>
+          <span>more</span>
+        </p>
+
+
+      </div>
+    </div>
+
+  </div>
+  <!--  -->
+  <div class="js-navbar-mobile-overlay main-nav-bar__overlay" data-open="true">
+    <ul class="main-nav-bar__overlay__section main-nav-bar__overlay__section--large">
+      <li>
+        <a data-track-action="mobile-ham" data-track-label="home" href="/">Home</a>
+      </li>
+    </ul>
+    <hr class="main-nav-bar__overlay__divider">
+    <ul class="main-nav-bar__overlay__section main-nav-bar__overlay__section--large">
+      <li>
+        <a data-track-action="mobile-ham" data-track-label="discover" href="/discover/">Discover Photos</a>
+      </li>
+      <li>
+        <a data-track-action="mobile-ham" data-track-label="popular-searches" href="/popular-searches/">Popular
+          Searches</a>
+      </li>
+      <li>
+        <a data-track-action="mobile-ham" data-track-label="videos" href="/videos/">Free Videos</a>
+      </li>
+      <li>
+        <a data-track-action="mobile-ham" data-track-label="challenges" href="/challenges/">Challenges</a>
+      </li>
+      <li>
+        <a data-track-action="mobile-ham" data-track-label="leaderboard" href="/leaderboard/">Leaderboard</a>
+      </li>
+      <li>
+        <a data-track-action="mobile-ham" data-track-label="stories" href="/blog/">Pexels Blog</a>
+      </li>
+    </ul>
+    <hr class="main-nav-bar__overlay__divider">
+    <ul class="main-nav-bar__overlay__section">
+      <li class="when-not-signed-in">
+        <a data-track-action="mobile-ham" data-track-label="login" href="/login/" rel="nofollow">
+          Login
+        </a>
+      </li>
+      <li class="when-not-signed-in">
+        <a data-track-action="mobile-ham" data-track-label="signup" href="/onboarding/" rel="nofollow">
+          Join
+        </a>
+      </li>
+      <li class="when-signed-in">
+        <a data-track-action="mobile-ham" data-track-label="profile" href="/me/" rel="nofollow">
+          Your Profile
+        </a>
+      </li>
+      <li>
+        <a class="js-show-switch-locale js-switch-locale-flag" data-track-action="mobile-ham"
+          data-track-label="switch-locale" href="#" data-activated="true" data-flag-activated="true">
+          Change Language
+          <img width="36" height="26" class="switch-locale__flag"
+            src="https://www.pexels.com/assets/flags/en-US-9ac49f52fbe3cc86ef500da8d7dfac4468c0e98419808425a9cdc1af7714cee1.png"></a>
+      </li>
+      <li class="when-signed-in">
+        <a data-track-action="mobile-ham" data-track-label="submit" href="/upload/" rel="nofollow">
+          Upload
+        </a>
+      </li>
+      <li>
+        <a data-track-action="mobile-ham" data-track-label="license" href="/license/">
+          License
+        </a>
+      </li>
+      <li class="when-signed-in">
+        <a data-track-action="mobile-ham" data-track-label="setting" href="/edit-profile/" rel="nofollow">
+          Settings
+        </a>
+      </li>
+      <li class="when-signed-in">
+        <a class="js-logout-btn" data-track-action="mobile-ham" data-track-label="logout" href="/logout/" rel="nofollow"
+          data-activated="true">
+          Logout
+        </a>
+      </li>
+    </ul>
+    <hr class="main-nav-bar__overlay__divider">
+    <ul class="main-nav-bar__overlay__section">
+      <li>
+        <a data-track-action="mobile-ham" data-track-label="apps" href="/pro/">
+          <span class="translation_missing" title="translation missing: en-US.layouts.navbar.apps_and_ps_plugin">Apps
+            And Ps Plugin</span>
+        </a>
+      </li>
+      <li>
+        <a data-track-action="mobile-ham" data-track-label="faq" href="https://help.pexels.com/hc/en-us" rel="nofollow">
+          FAQ
+        </a>
+      </li>
+      <li>
+        <a data-track-action="mobile-ham" data-track-label="about" href="/about/" rel="nofollow">
+          About Us
+        </a>
+      </li>
+      <li>
+        <a data-track-action="mobile-ham" data-track-label="imprint" href="/imprint/" rel="nofollow">
+          Imprint &amp; Terms
+        </a>
+      </li>
+    </ul>
+    <hr class="main-nav-bar__overlay__divider main-nav-bar__overlay__divider--full-width">
+    <!-- <ul class="main-nav-bar__overlay__icons">
+      <li>
+        <a data-track-action="mobile-ham" data-track-label="facebook" href="https://www.facebook.com/pexels"
+          rel="nofollow" target="_blank" title="Facebook">
+          <i class="icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a data-track-action="mobile-ham" data-track-label="twitter" href="https://twitter.com/pexels" rel="nofollow"
+          target="_blank" title="Twitter">
+          <i class="icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a data-track-action="mobile-ham" data-track-label="instagram" href="https://instagram.com/pexels/"
+          rel="nofollow" target="_blank" title="Instagram">
+          <i class="rd__svg-icon rd__svg-icon--17x17" style="margin-top: -3px"><svg xmlns="http://www.w3.org/2000/svg"
+              width="24" height="24" viewBox="0 0 24 24">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z">
+              </path>
+            </svg>
+          </i>
+        </a>
+      </li>
+      <li>
+        <a data-track-action="mobile-ham" data-track-label="pinterest" href="https://www.pinterest.com/pexels"
+          rel="nofollow" target="_blank" title="Pinterest">
+          <i class="icon-pinterest"></i>
+        </a>
+      </li>
+      <li>
+        <a data-track-action="mobile-ham" data-track-label="youtube" href="https://www.youtube.com/c/PexelsPhotos"
+          rel="nofollow" target="_blank" title="YouTube">
+          <i class="rd__svg-icon rd__svg-icon--20x20" style="margin-top: -2px"><svg xmlns="http://www.w3.org/2000/svg"
+              height="682pt" viewBox="-21 -117 682.66672 682" width="682pt">
+              <path
+                d="m626.8125 64.035156c-7.375-27.417968-28.992188-49.03125-56.40625-56.414062-50.082031-13.703125-250.414062-13.703125-250.414062-13.703125s-200.324219 0-250.40625 13.183593c-26.886719 7.375-49.03125 29.519532-56.40625 56.933594-13.179688 50.078125-13.179688 153.933594-13.179688 153.933594s0 104.378906 13.179688 153.933594c7.382812 27.414062 28.992187 49.027344 56.410156 56.410156 50.605468 13.707031 250.410156 13.707031 250.410156 13.707031s200.324219 0 250.40625-13.183593c27.417969-7.378907 49.03125-28.992188 56.414062-56.40625 13.175782-50.082032 13.175782-153.933594 13.175782-153.933594s.527344-104.382813-13.183594-154.460938zm-370.601562 249.878906v-191.890624l166.585937 95.945312zm0 0">
+              </path>
+            </svg>
+          </i>
+        </a>
+      </li>
+    </ul> -->
+  </div>
+  <div class="underlined-tabs underlined-tabs--large underlined-tabs--centered underlined-tabs--shadow">
+    <a class="underlined-tabs__tab underlined-tabs__tab--active" href="/">Home</a>
+    <a class="underlined-tabs__tab" href="#">Discover</a>
+    <a class="underlined-tabs__tab" href="#">Videos</a>
+    <a class="underlined-tabs__tab " href="#">Leaderboard</a>
+    <a class="underlined-tabs__tab" href="#">Challenges</a>
+  </div>
+
+  <!-- --------------container------------------ -->
+  <div class="container-fluid home-page">
+    <div class="title-tabs">
+      <div class="home-link-title">Trending Free Stock Videos</div>
+      <div class="rd__dropdown--right" data-dropdown-initialized="true">
+        <div class="rd__button--right">
+          <span class="js-home-link-active-text">Trending</span>
+          <i class="rd__svg-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path d="M7 10l5 5 5-5z"></path>
+            </svg>
+          </i>
+        </div>
+        <!-- <div class="rd__dropdown__container" style="display: none;">
+          <div class="rd__dropdown__container__content">
+            <div class="rd__dropdown__container__content__pointer" style="left: auto; right: 44px; top: -4.5px;"></div>
+            <ul class="rd__dropdown__container__content__items">
+              <li role="option">
+                <a class="js-home-link js-home-trending" data-active="" data-key="trending" data-url="/videos/"
+                  href="/videos/">Trending</a>
+              </li>
+              <li role="option">
+                <a class="js-home-link js-home-new" data-key="new" data-url="/videos/new/" href="/videos/new/">New</a>
+              </li>
+            </ul>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <div class="row"> 
+      <div class="col column-content">
+        <img src="https://images.pexels.com/photos/12625862/pexels-photo-12625862.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:100%">
+        <img src="https://images.pexels.com/photos/12656616/pexels-photo-12656616.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+        <img src="https://images.pexels.com/photos/12553640/pexels-photo-12553640.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+        <img src="https://images.pexels.com/photos/12397035/pexels-photo-12397035.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+        <img src="https://images.pexels.com/photos/12568118/pexels-photo-12568118.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+        <img src="https://images.pexels.com/photos/12642987/pexels-photo-12642987.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+        <img src="https://images.pexels.com/photos/12118273/pexels-photo-12118273.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+      </div>
+      <div class="col column-content">
+        <img src="https://images.pexels.com/photos/12456043/pexels-photo-12456043.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+        <img src="https://images.pexels.com/photos/12266358/pexels-photo-12266358.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+        <img src="https://images.pexels.com/photos/12416757/pexels-photo-12416757.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+        <img src="https://images.pexels.com/photos/12340883/pexels-photo-12340883.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+        <img src="https://images.pexels.com/photos/12281345/pexels-photo-12281345.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+        <img src="https://images.pexels.com/photos/10345617/pexels-photo-10345617.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+        <img src="https://images.pexels.com/photos/12249340/pexels-photo-12249340.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+
+      </div>  
+      <div class="col column-content">
+        <img src="https://images.pexels.com/photos/12249340/pexels-photo-12249340.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+        <img src="https://images.pexels.com/photos/5332934/pexels-photo-5332934.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+        <img src="https://images.pexels.com/photos/12489555/pexels-photo-12489555.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+        <img src="https://images.pexels.com/photos/12367877/pexels-photo-12367877.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+        <img src="https://images.pexels.com/photos/12576276/pexels-photo-12576276.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+        <img src="https://images.pexels.com/photos/12132217/pexels-photo-12132217.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+        <img src="https://images.pexels.com/photos/12551625/pexels-photo-12551625.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+      </div>
+      <div class="col column-content">
+        <img src="https://images.pexels.com/photos/6431895/pexels-photo-6431895.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+        <img src="https://images.pexels.com/photos/12235408/pexels-photo-12235408.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+        <img src="https://images.pexels.com/photos/10757870/pexels-photo-10757870.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+        <img src="https://images.pexels.com/photos/12241511/pexels-photo-12241511.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+        <img src="https://images.pexels.com/photos/12338228/pexels-photo-12338228.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+        <img src="https://images.pexels.com/photos/12625862/pexels-photo-12625862.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:100%">
+        <img src="https://images.pexels.com/photos/12457403/pexels-photo-12457403.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" style="width:100%">
+      </div>
+    </div>
+
+  </div>
+  <!-- --------------footer--------------------- -->
+  <div class="footer">
+
+  </div>
+</body>
+
+
+<script src="./assets/js/script.js"></script>
+
+</html>

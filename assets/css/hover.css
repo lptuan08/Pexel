@@ -1,0 +1,16 @@
+a:hover {
+    color: #ccc;
+}
+.active{
+    display: flex;
+}
+.header-nav__scroll {
+    background-color: #232a34;
+
+}
+.header-nav__search__header {
+    display: none;
+}
+.active{
+    display: block;
+}
